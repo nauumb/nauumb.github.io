@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/css/main.css">
+    <title>U08T01 - Trajes típicos de Canarias</title>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" media="screen"
+        rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js">
+    </script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Elige una dificultad: </legend>
+        <label for="easy-mode">Fácil</label>
+        <input type="radio" name="mode" value="4" id="easy-mode">
+        <label for="normal-mode">Normal</label>
+        <input type="radio" name="mode" value="6" id="normal-mode">
+        <label for="hard-mode">Difícil</label>
+        <input type="radio" name="mode" value="8" id="hard-mode">
+    </fieldset>
+    <div id="root-container"></div>
+
+    <script src="/dist/bundle.js"></script>
+</body>
+
+</html>
