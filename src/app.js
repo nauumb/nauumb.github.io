@@ -1,28 +1,12 @@
-import {
-  createIsland,
-  createImage
-} from './modules/interface.js'
-import {
-  getRandomIslands,
-  getRandomImages
-} from './modules/random.js'
+import { getCharacters, getComics} from "./modules/api-connection";
 
-let root = $('#root-container')
-let islands = getRandomIslands()
-let images = []
+$('#search-character').change(function() {
+    let string = $('#search-character').val();
+    getCharacters(string);
+});
 
-$('[name=mode]').change(function () {
-  let images = $('.image-container')
-  if (images.length > 0) {
-    for (let x = 0; x < images.length; x++) {
-      images[x].remove()
-    }
-  }
-  images = getRandomImages($(this).val(), islands)
-  for (let x = 0; x < images.length; x++) {
-    createImage(root, images[x])
-  }
-})
-for (let x = 0; x < islands.length; x++) {
-  createIsland(root, islands[x])
-}
+$('#search-comic').change(function() {
+    let string = $('#search-comic').val();
+    getComics(string);
+});
+
